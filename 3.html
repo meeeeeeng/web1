@@ -4,21 +4,51 @@
   <title>WEB1- html</title>
   <meta charset="utf-8">
 </head>
-  <style>
-a{
-  color:black; text-decoration: none;
-}
-</style>
+
+<style>
+      body{margin:0;}
+      a{
+        color:black; text-decoration: none;
+      }
 
 
-<body>
-  <h1><a href="index.html">meenzee's instagram</a></h1>
-  <ol>
-    <li><a href="1.html"> facebook</a></li>
-    <li><a href="2.html"> vsco</a></li>
-    <li><a href="3.html"style ="color:blue;"> instagram</a></li>
-  </ol>
-  <h2><a href="https://www.instagram.com/meenzee_chae"target="_blank"title="meenzee's instagram">
-    meenzee's instagram link</a></h2>
 
+      #active {color:blue;}
+
+      h1{font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin:0;
+        padding: 20px;
+      }
+
+      #grid ol{ border-right: 1px solid gray;
+        width:80px;
+        margin:0;
+        padding : 30px;
+        padding-left: 50px
+        }
+       #grid {
+          display: grid;
+          grid-template-columns: 150px 1fr;
+        }
+        #grid #link {
+          padding-left: 40px
+        }
+  </style>
+
+  <body>
+    <h1><a href="index.html">meenzee's instagram</a></h1>
+ <div id="grid">
+      <ol>
+        <li><a href="1.html"class="saw"> facebook</a></li>
+        <li><a href="2.html"class="saw" > vsco</a></li>
+        <li><a href="3.html"class="saw"id="active"> instagram</a></li>
+      </ol>
+      <div id= "link">
+          <h2><a href="https://www.instagram.com/meenzee_chae"target="_blank"title="meenzee's instagram">
+            meenzee's instagram link</a></h2>
+
+      </div>
+ </div>
 </body>
